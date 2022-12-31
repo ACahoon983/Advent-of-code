@@ -15,6 +15,7 @@ def part1(filename):
                     break
             if item1 == item2:
                 break
+    file.close
     return priority
 
 
@@ -45,6 +46,7 @@ def part2(filename):
                     break
         rucksack3 = rucksack2
         rucksack2 = rucksack
+    file.close
     return priority
 
 

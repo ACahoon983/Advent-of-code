@@ -14,7 +14,7 @@ def checkOverlap(pair):
         return 1
     else:
         return 0
-    
+
 
 def part1(filename):
     file = open(filename, 'r')
@@ -23,6 +23,7 @@ def part1(filename):
     for pair in pairs:
         if checkOverlap(pair) == 2:
             fullyEncompassedRanges += 1
+    file.close
     return fullyEncompassedRanges
 
 
@@ -33,6 +34,7 @@ def part2(filename):
     for pair in pairs:
         if checkOverlap(pair) > 0:
             overlappingPairs += 1
+    file.close
     return overlappingPairs
 
 
